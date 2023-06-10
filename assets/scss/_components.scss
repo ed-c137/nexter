@@ -1,0 +1,83 @@
+.logo{
+    height: 3.25rem;
+}
+
+.search{
+    // background: wheat;
+    flex-basis: 40%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__input{
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        border: none;
+        border-radius: 100px;
+        width: 90%;
+        background-color: var(--color-grey-light-2);
+        padding: .7rem 2rem;
+        transition: all .3s;
+        &:focus{
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
+        &::-webkit-input-placeholder{
+            font-weight: 100;
+            color:  var(--color-grey-light-2);
+        }
+    }
+    &__input:focus + &__button{
+        color: var(--color-grey-light-4);
+    }
+
+
+    &__button{
+        background-color: var(--color-grey-light-2);
+        border: none;
+        margin: -3.25rem;
+        align-items: stretch;
+        &:focus{
+            outline: none;
+        }
+        &:active{
+             transform: translateY(2px);
+         } 
+    }
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+        // background-color: orange;
+        fill: var(--color-grey-grey-3)
+    }
+
+}
+
+.user-nav{
+    display: flex;
+    background: cornflowerblue;
+    &__icon-box{
+
+    }
+    &__icon{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    &__notification{
+
+    }
+    &__user{
+
+    }
+    &__user-photo{
+        height: 3.75rem;
+        border-radius: 50%;
+    }
+    &__user-name{
+
+    }
+   
+}
